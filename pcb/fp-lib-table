@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Connector_NES)(type KiCad)(uri ${KIPRJMOD}/Connector_NES.pretty)(options "")(descr ""))
+  (lib (name Connector_Pmod)(type KiCad)(uri ${KIPRJMOD}/Connector_Pmod.pretty)(options "")(descr ""))
+)
