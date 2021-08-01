@@ -2,7 +2,7 @@
 gerbers/
 
 # Exported PDF files
-*.pdf
+pdf/
 
 # THe rest of this is from:
 # https://github.com/github/gitignore/blob/master/KiCad.gitignore

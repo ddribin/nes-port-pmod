@@ -1,17 +1,17 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "NES Port Pmod Adapter"
+Date "2021-08-01"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "MIT License"
+Comment4 "Author: Dave Dribin"
 $EndDescr
 $Comp
 L Connector_NES:NES_Port_Male J2

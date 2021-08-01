@@ -2,14 +2,22 @@
 
   (general
     (thickness 1.6)
-    (drawings 12)
+    (drawings 15)
     (tracks 29)
     (zones 0)
     (modules 2)
     (nets 11)
   )
 
-  (page A4)
+  (page USLetter)
+  (title_block
+    (title "NES Port Pmod Adapter")
+    (date 2021-08-01)
+    (rev 1.0)
+    (comment 3 "MIT License")
+    (comment 4 "Author: Dave Dribin")
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
@@ -82,11 +90,11 @@
       (plotinvisibletext false)
       (padsonsilk false)
       (subtractmaskfromsilk false)
-      (outputformat 1)
+      (outputformat 4)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "pdf"))
   )
 
   (net 0 "")
@@ -112,7 +120,6 @@
     (add_net /D3)
     (add_net /D4)
     (add_net /DATA)
-    (add_net /GND)
     (add_net /LATCH)
     (add_net "Net-(J1-Pad10)")
     (add_net "Net-(J1-Pad8)")
@@ -126,6 +133,7 @@
     (via_drill 0.381)
     (uvia_dia 0.762)
     (uvia_drill 0.381)
+    (add_net /GND)
     (add_net /VCC)
   )
 
@@ -285,6 +293,15 @@
     )
   )
 
+  (gr_text "Ver. 1.0" (at 109.474 81.788) (layer B.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  )
+  (gr_text "Pmod NES" (at 109.474 81.788) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  )
+  (gr_text "Dave Dribin" (at 109.474 107.442) (layer F.SilkS) (tstamp 61062CCC)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  )
   (gr_text "D3 CLK" (at 116.205 88.265) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
@@ -362,7 +379,7 @@
   (segment (start 131.445 95.885) (end 130.683 96.647) (width 0.254) (layer B.Cu) (net 7))
   (segment (start 111.76 88.265) (end 111.76 86.36) (width 0.254) (layer B.Cu) (net 7))
 
-  (zone (net 5) (net_name /GND) (layer B.Cu) (tstamp 60F6DE23) (hatch edge 0.508)
+  (zone (net 5) (net_name /GND) (layer B.Cu) (tstamp 610587B4) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
